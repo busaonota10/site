@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @feedback.content %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @feedback.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @feedback.longitude %>
+</p>
+
+<p>
+  <strong>Opinion:</strong>
+  <%= @feedback.opinion %>
+</p>
+
+<p>
+  <strong>Sent at:</strong>
+  <%= @feedback.sent_at %>
+</p>
+
+<p>
+  <strong>Bus:</strong>
+  <%= @feedback.bus %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @feedback.user %>
+</p>
+
+<%= link_to 'Edit', edit_feedback_path(@feedback) %> |
+<%= link_to 'Back', feedbacks_path %>

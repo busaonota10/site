@@ -3,10 +3,14 @@
 
 Modelagem:
 
+Companhia
+---------
+Nome
+
 Linha
 ---------
 Número (Único)
-Nome da Empresa (opcional e interno)
+Companhia
 
 
 Ônibus
@@ -28,4 +32,3 @@ Opinião
 Usuário
 ---------
 Número celular
-Id celular
