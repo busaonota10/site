@@ -1,0 +1,31 @@
+== Busão Nota 10
+
+
+Modelagem:
+
+Linha
+---------
+Número (Único)
+Nome da Empresa (opcional e interno)
+
+
+Ônibus
+---------
+Número Identificador
+Linha
+
+
+Feedback
+---------
+User
+Ônibus
+Texto
+Latitude
+Longitude
+Opinião
+
+
+Usuário
+---------
+Número celular
+Id celular
