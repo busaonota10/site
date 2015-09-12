@@ -19,9 +19,9 @@ class CompaniesController < ApplicationController
     @company = Company.new(company_params)
 
     if @company.save
-      render :show, status: :created, location: @company }
+      render :show, status: :created, location: @company
     else
-      render json: @company.errors, status: :unprocessable_entity }
+      render json: @company.errors, status: :unprocessable_entity
     end
   end
 

@@ -12,8 +12,6 @@ class FeedbacksController < ApplicationController
     @feedback = Feedback.new
   end
 
-  end
-
   def create
     @feedback = Feedback.new(feedback_params)
 
