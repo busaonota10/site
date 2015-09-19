@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
+  root 'home#index'
+
   resources :companies, defaults: {format: :json} do
     resources :lines do
-      resources :buses do
-        resources :feedbacks
-      end
+      resources :buses
     end
   end
 
-  resources :users
+  resources :feedbacks, :users, defaults: {format: :json}
 end
