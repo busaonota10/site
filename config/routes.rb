@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :feedbacks, :users, defaults: {format: :json}
+  resources :feedbacks, :users
 end
