@@ -44,6 +44,6 @@ class BusesController < ApplicationController
     end
 
     def bus_params
-      params.require(:bus).permit(:identification_number, :line_id)
+      params.require(:bus).permit(:identification_number, :line, :company_id)
     end
 end
