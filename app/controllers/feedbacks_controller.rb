@@ -6,6 +6,7 @@ class FeedbacksController < ApplicationController
   end
 
   def show
+    @bus = @feedback.bus
   end
 
   def new
@@ -17,7 +18,8 @@ class FeedbacksController < ApplicationController
 
   def create
     @feedback = Feedback.new(feedback_params.except(:bus))
-    @feedback.bus = get_or_create_bus
+    @bus = get_or_create_bus
+    @feedback.bus = @bus
 
     if @feedback.save
       render :show, status: :created, location: @feedback
