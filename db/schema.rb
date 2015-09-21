@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 20150921030727) do
   end
 
   add_index "buses", ["company_id"], name: "index_buses_on_company_id", using: :btree
+  add_index "buses", ["identification_number"], name: "index_buses_on_identification_number", unique: true, using: :btree
+  add_index "buses", ["line"], name: "index_buses_on_line", unique: true, using: :btree
 
   create_table "companies", force: :cascade do |t|
     t.string   "name"
