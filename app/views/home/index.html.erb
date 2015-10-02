@@ -1,1 +1,49 @@
+<%= link_to("#", class: 'etiqueta') do %>
+  <%= image_tag("etiqueta.png") %>
+<% end %>
 
+<section class="intro-app">
+  <div class="container">
+    <div class="brand">
+      <div class="logo-name">
+        <%= image_tag("logo@2x.png", class: 'logo') %>
+        <div class="name">
+          <h1>Busão Nota 10</h1>
+          <h2>Melhore o transporte do Rio</h2>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="grid-1-2">
+        <h2>Como você avalia suas viagens de ônibus no Rio?</h2>
+        <h3>Que tal avaliar suas experiências e compartilhar no facebook para ajudar a melhorar esse serviço?<br>O histórico de avaliações será transparente para toda a comunidade, a prefeitura do Rio e as empresas de ônibus.</h3>
+        <a href="#"><button><span class="android"></span>Baixe Grátis</button></a>
+        <p>Disponível no Google Play Store</p>
+      </div>
+      <figure class="grid-1-2 right">
+        <%= image_tag("busao-nota-10-mockup2.png", class: 'mockup') %>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="vote-rioapps grid-1-2">
+      <h4>Curtiu o Applicativo?</h4>
+      <h5>Vote na gente no concurso Rio Apps!</h5>
+      <a href="#"><button class="blue"><span class="vote"><span>Votar no Rio Apps!</button></a>
+    </div>
+    <div class="rioapps-logos grid-1-2 right">
+      <figure class="grid-1-3 rio450">
+        <%= image_tag("logo-rio450anos.jpg") %>
+      </figure>
+      <figure class="grid-1-3 prefeitura">
+        <%= image_tag("logo-prefeitura.png") %>
+      </figure>
+      <figure class="grid-1-3 rioapps-logo">
+        <%= image_tag("logo-rioapps.png") %>
+      </figure>
+    </div>
+  </div>
+</footer>
