@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 69" enable-background="new 0 0 60 69" xml:space="preserve">
+<g display="none">
+	<ellipse display="inline" opacity="5.000000e-02" fill-rule="evenodd" clip-rule="evenodd" cx="30" cy="66.6" rx="12.5" ry="2.2"/>
+	<circle display="inline" fill="#FCD657" cx="30" cy="30.1" r="30"/>
+	<circle display="inline" fill="#D08102" cx="46.3" cy="30" r="3.8"/>
+	<circle display="inline" fill="#D08102" cx="13.7" cy="30" r="3.8"/>
+	<path display="inline" fill="#D08102" d="M40,36.1c0,4.1-3.3,9.7-10.2,9.7S20,40,20,36.1H40z"/>
+	<path display="inline" fill="none" stroke="#D08102" stroke-width="0.8409" stroke-linecap="round" stroke-miterlimit="10" d="
+		M8.2,22.8c0,0,1.7-3.6,5.4-3.4"/>
+	<path display="inline" fill="none" stroke="#D08102" stroke-width="0.8409" stroke-linecap="round" stroke-miterlimit="10" d="
+		M52.4,22.8c0,0-1.7-3.6-5.4-3.4"/>
+</g>
+<g>
+	<ellipse opacity="5.000000e-02" fill-rule="evenodd" clip-rule="evenodd" cx="30" cy="66.6" rx="12.5" ry="2.2"/>
+	<circle fill="#FCD657" cx="30" cy="30.1" r="30"/>
+	<g>
+		<circle fill="#D08102" cx="45.8" cy="39.6" r="3.7"/>
+		<circle fill="#D08102" cx="13.9" cy="39.6" r="3.7"/>
+		<path fill="none" stroke="#D08102" stroke-width="2.1023" stroke-linecap="round" stroke-miterlimit="10" d="M22.5,48.2
+			c4.1-3.9,10.8-3.9,14.7,0"/>
+		<path fill="#D08102" d="M47.1,29.5c0,0,1.2,3.8,5,4.6"/>
+		<path fill="#D08102" d="M12.9,29.5c0,0-1.2,3.8-5,4.6"/>
+	</g>
+</g>
+</svg>

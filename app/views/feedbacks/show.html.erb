@@ -1,39 +1,65 @@
-<p id="notice"><%= notice %></p>
+<title>Avaliação › Busão Nota 10</title>
+<meta name="robots" content="index,follow">
+<meta name="robots" content="noarchive">
+<meta name="description" CONTENT="Como você avalia suas viagens de ônibus no Rio? Que tal avaliar suas experiências e compartilhar no facebook para ajudar a melhorar esse serviço?">
+<meta name="keywords" CONTENT="aplicativo, 'Rio de Janeiro', Rio, Ônibus, Busão, 'Transporte público', app, serviço, transporte, 'prefeitura do Rio', 'Rio Apps', 'concurso rio apps', 'avaliação', 'linha de ônibus', veículo, fetranspor, 'rio 450 anos' ">
 
-<p>
-  <strong>Content:</strong>
-  <%= @feedback.content %>
-</p>
+</head>
+<header class="intro-app small">
+  <div class="container">
+    <div class="brand">
+      <%= link_to(root_path, class: 'logo-name') do %>
+        <%= image_tag("logo@2x.png", class: 'logo') %>
+        <div class="name">
+          <h1>Busão Nota 10</h1>
+          <h2>Melhore o transporte do Rio</h2>
+        </div>
+      <% end %>
+      <a class="right" href="#">
+        <button><span class="android"></span>Baixe Grátis</button>
+      </a>
+    </div>
+  </div>
+</header>
 
-<p>
-  <strong>Latitude:</strong>
-  <%= @feedback.latitude %>
-</p>
-
-<p>
-  <strong>Longitude:</strong>
-  <%= @feedback.longitude %>
-</p>
-
-<p>
-  <strong>Opinion:</strong>
-  <%= @feedback.opinion %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @feedback.user %>
-</p>
-
-<p>
-  <strong>Sent at:</strong>
-  <%= @feedback.sent_at %>
-</p>
-
-<p>
-  <strong>Bus:</strong>
-  <%= @feedback.bus %>
-</p>
-
-<%= link_to 'Edit', edit_feedback_path(@feedback) %> |
-<%= link_to 'Back', feedbacks_path %>
+<section class="feedbacks container">
+  <div class="date">
+    <div class="col-1-6 top left">
+      <h1>
+        <%= I18n.localize(@feedback.sent_at, format: "%d") %>
+      </h1>
+      <h6><%= I18n.localize(@feedback.sent_at, format: "%b %Y").downcase %></h6>
+    </div>
+    <ul class="col-4-6">
+      <li class="feedback">
+        <%= image_tag(image_maps(@feedback.latitude, @feedback.longitude)) %>
+        <div class="message">
+          <figure class="status left">
+            <% if @feedback.good? %>
+              <%= image_tag("icon-smile-happy.svg") %>
+            <% else %>
+              <%= image_tag("icon-smile-sad.svg") %>
+            <% end %>
+          </figure>
+          <div class="text">
+            <div class="bus-data">
+              <div class="grid-1-2 left">
+                <label>Veículo</label>
+                <p><%= @feedback.bus.identification_number %></p>
+              </div>
+              <div class="grid-1-2">
+                <label>Linha</label>
+                <p><%= @feedback.bus.line %></p>
+              </div>
+            </div>
+            <div class="comment">
+              <label>Comentário</label>
+              <p><%= @feedback.content %></p>
+            </div>
+            <p><%= time_ago_in_words(@feedback.sent_at) %></p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
