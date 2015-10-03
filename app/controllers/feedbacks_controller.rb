@@ -9,13 +9,6 @@ class FeedbacksController < ApplicationController
     @bus = @feedback.bus
   end
 
-  def new
-    @feedback = Feedback.new
-  end
-
-  def edit
-  end
-
   def create
     @feedback = Feedback.new(feedback_params.except(:bus))
     @bus = get_or_create_bus
@@ -23,14 +16,6 @@ class FeedbacksController < ApplicationController
 
     if @feedback.save
       render :show, status: :created, location: @feedback
-    else
-      render json: @feedback.errors, status: :unprocessable_entity
-    end
-  end
-
-  def update
-    if @feedback.update(feedback_params)
-      render :show, status: :ok, location: @feedback
     else
       render json: @feedback.errors, status: :unprocessable_entity
     end
