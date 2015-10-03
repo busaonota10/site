@@ -1,5 +1,7 @@
 <% content_for :specific_meta_tags do %>
   <title>Avaliação › Busão Nota 10</title>
+  <meta name="description" content="<%= @feedback.content %>">
+  <meta property="og:description" content="<%= @feedback.content %>" />
 <% end %>
 
 <header class="intro-app small">

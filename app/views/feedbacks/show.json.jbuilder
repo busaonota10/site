@@ -10,4 +10,4 @@ json.sent_at do
   json.day_name I18n.localize(@feedback.sent_at, format: "%A")
 end
 
-json.image_maps image_maps(@feedback.latitude, @feedback.longitude)
+json.image_maps image_maps(@feedback.latitude, @feedback.longitude, true)
