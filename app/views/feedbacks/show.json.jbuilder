@@ -1,4 +1,4 @@
-json.extract! @feedback, :id, :content, :latitude, :longitude, :opinion, :user, :created_at, :updated_at
+json.extract! @feedback, :id, :content, :latitude, :longitude, :opinion
 json.url feedback_url(@feedback)
 json.bus do
   json.identification_number @bus.identification_number
