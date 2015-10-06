@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 /* CSS RESET
 -----------------------------------------------------------
 -----------------------------------------------------------*/
@@ -54,13 +55,16 @@ table {
 -----------------------------------------------------------*/
 .container{
   margin:0 auto;
-  width: 75%;
+  width: 80%;
   max-width: 1680px;
 }
 .grid-1-2 {
   width: 50%;
   display: inline-block;
   vertical-align: top;
+}
+.about .grid-1-2{
+  line-height: 0;
 }
 .grid-1-3{
   display: inline-block;
@@ -142,7 +146,10 @@ h5{
 h6{
   font-size: 1em;
 }
-p{
+a {
+  text-decoration: none;
+}
+p {
   color: #999999;
   font-size: .93779em;
   line-height: 1.4em;
@@ -161,16 +168,16 @@ button{
   border: none;
   border-radius: 3px;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 14px;
+  letter-spacing: 3px;
+  font-size: 12px;
   padding:20px 40px 20px 35px;
   box-shadow: 0px 1px 2px rgba(0,0,0,.2);
   transition:.2s;
+  font-family: "Montserrat", sans-serif;
 }
 button.blue{
   background-color: #1e88e5;
   letter-spacing: 1px;
-  /*padding:10px 40px 15px;*/
   padding:20px 45px 24px;
 }
 button:hover{
@@ -255,7 +262,7 @@ footer h5{
   font-size: 48px;
   line-height: 60px;
   font-weight: 100;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 .intro-app h3{
   font-size: 18px;
@@ -280,13 +287,28 @@ footer h5{
   height: auto;
   display: inline-block;
 }
+.intro-app h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color:#63ffda;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  margin-left: 4px;
+}
 .brand h1{
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0;
   font-weight: 400;
   font-size: 22px;
   display: inline-block;
   vertical-align: top;
-  margin-top: 0px;
+  margin-top: 10px;
+  text-transform: none;
+  color: white;
 }
+
 .mockup{
   float: right;
   margin-top: -12vh;
@@ -377,7 +399,7 @@ footer h5{
 }
 @media screen and (max-width: 767px){
   .intro-app{
-    min-height: 1000px;
+    min-height: 1156px;
   }
   .brand{
     padding:6vh 0 4vh;
@@ -429,10 +451,11 @@ footer h5{
 .etiqueta{
   position: absolute;
   right: 0;
-  top: 6vh;
+  top: 2vh;
+  z-index: 999999;
 }
 .etiqueta img{
-  width: 100px;
+  width: 130px;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
   .etiqueta{
@@ -599,4 +622,464 @@ footer h5{
   .comment{
     margin-bottom: 15px;
   }
+}
+
+/* NEW HOME
+------------*/
+.single-page-nav{
+  background-color: #fafafa;
+  -webkit-font-smoothing:antialiased;
+  margin-top: 160px;
+  /*border-bottom: 1px solid #eae9e9;*/
+  padding: 33px 0;
+  box-shadow: 0 1px 1px rgba(0,0,0,.09);
+}
+.single-page-nav.cloned{
+  padding:34px 0 22px;
+}
+.single-page-nav.cloned a{
+  padding:38px 0;
+}
+.single-page-nav li{
+  display: inline-block;
+  margin-right: 60px;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.single-page-nav a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: all .2s;
+  padding: 33px 0;
+}
+.single-page-nav a:hover,
+.single-page-nav .current{
+  color:#8e24aa;
+}
+.single-page-nav .current{
+  border-bottom: 1px solid #8e24aa;
+}
+.single-page-nav a button{
+  cursor: pointer;
+}
+.single-page-nav a button{
+  background: #fafafa;
+  border:1px solid #8e24aa;
+  box-shadow: none;
+  color: #8e24aa;
+  padding:15px 80px 18px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+    margin-top: -20px;
+}
+.single-page-nav.cloned a button{
+  margin-bottom: -3px;
+    margin-top: -14px;
+    background: #8e24aa;
+    color:white;
+}
+.single-page-nav a button:hover{
+  background: #8e24aa;
+  color:white;
+}
+.single-page-nav.cloned a button:hover{
+  box-shadow: 0px 1px 4px rgba(0,0,0,.3);
+}
+section{
+  position: relative;
+  -webkit-font-smoothing:antialiased;
+}
+section .title{
+  margin-bottom: 70px;
+}
+section .title h2{
+  font-size: 64px;
+  color: #63ffda;
+  font-weight: 300;
+  margin-bottom: 30px;
+  margin-left: -4px;
+}
+section .grid-1-3{
+  width: 28%;
+  margin-right: 2%;
+  display: inline-block;
+  padding-right: 4%;
+}
+@media screen and (max-width: 767px){
+  .single-page-nav{
+    display: none;
+  }
+}
+@media screen and (max-width: 767px){
+  section .grid-1-3{
+    width: 100%;
+    display: block;
+    margin-right: 0;
+    padding:0;
+  }
+}
+.how-to .last, section .last{
+  margin-right: 0;
+}
+.how-to{
+  padding: 120px 0;
+}
+.how-to span,
+.vote .numerals,
+.about .text h4{
+  color:#63ffda;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: -.5px;
+  font-size: 64px;
+}
+section .grid-1-3 h4{
+  font-size: 24px;
+  color:#222222;
+  margin:30px 0 25px;
+}
+section .grid-1-3 p{
+  color:#8a8a8a;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+section .grid-1-3 img{
+  width: 95%;
+}
+.mission{
+  padding:120px 0 140px;
+  background-color: #ffffff;
+  border-top:0px solid #f0f0f0;
+}
+.mission span{
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 5px;
+  background-color: #63ffda;
+}
+.about{
+  padding: 0 0;
+  background-color: #1e88e5;
+
+}
+.about p{
+  color: white;
+}
+.about img{
+  width: 100%;
+}
+
+
+footer.small{
+  height: 37px;
+  background-color: #63ffda;
+  line-height: 1em;
+  padding:13px 0 0 0;
+}
+footer.small a{
+  color:#38917c;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.team {
+  height: 25vh;
+  background-color: #8e24aa;
+}
+.member{
+  background-color: #8e24aa;
+  height: 17vh;
+}
+.member h5{
+  color: #63ffda;
+}
+.team .member{
+  padding-top: 8vh;
+  padding-left: 4vw;
+  width: 21vw;
+}
+.member p{
+  color: white;
+  opacity: .5;
+  margin-top: 1vh;
+}
+.team img{
+  background-size:cover;
+  width: 25vw;
+}
+.about .text{
+  padding-top: 150px;
+  width: 45%;
+  padding-right: 5%;
+}
+.about .text p{
+  opacity: .75;
+  margin-bottom: 20px;
+}
+.vote .title{
+  padding: 19vh 0 3.5vh;
+}
+#vote{
+  background-color: #1e88e5;
+  background: asset-url("vote-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  color: white;
+  display: block;
+  position: relative;
+  height: 95vh;
+}
+.vote .grid-1-3 p{
+  color: white;
+}
+.vote .title h2{
+  color: white;
+  font-weight: 100;
+}
+.vote .title h6{
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color:#63ffda;
+  width: 20%;
+}
+.vote .numerals{
+  display: inline-block;
+}
+.vote p{
+  color: white;
+  display: inline-block;
+  width: 73%;
+  margin-left: 3%;
+  vertical-align: middle;
+}
+.vote a{
+  display: block;
+  text-align: center;
+}
+
+.vote .grid-1-3{
+  margin-bottom: 9vh;
+}
+
+.vote .title p{
+  margin-left: 0;
+  opacity: .9;
+}
+.team .hidden{
+  margin-top: 30px;
+  opacity: .25;
+  transition: all .3s;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.team a:hover .hidden{
+  opacity: 1;
+  color:#63ffda;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  .single-page-nav li{
+    margin-right: 30px;
+  }
+  .single-page-nav a button{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  section .grid-1-3{
+    padding-right: 2%;
+    width: 29%;
+  }
+  .single-page-nav{
+    margin-top: 80px;
+  }
+  .how-to{
+        padding: 80px 0;
+  }
+  .mission{
+    padding:90px 0;
+  }
+  .about .text {
+    padding-top: 80px;
+    width: 100%;
+  }
+  .about .grid-1-2 {
+    width: 100%;
+  }
+  .team{
+    height: auto;
+    line-height: 0;
+  }
+  .team .member {
+    padding-top: 2.5vh;
+    padding-left: 20px;
+  }
+  .member{
+    height: auto;
+  }
+  .member h5 {
+    line-height: 1.2em;
+  }
+  .member p{
+    margin-top: 2px;
+    font-size: 13px;
+  }
+  .team .hidden {
+    margin-top:15px;
+  }
+  #vote{
+    height: auto;
+  }
+  .vote .title{
+      padding: 120px 0 10px;
+      margin-bottom: 50px;
+  }
+  .vote .title p{
+    width: 100%;
+  }
+  .vote p {
+    width: 95%;
+  }
+  .vote .grid-1-3{
+    margin-bottom: 30px;
+  }
+  .vote a button{
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 940px){
+  .single-page-nav a button{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 767px){
+  .single-page-nav{
+    display: none !important;
+  }
+  section .grid-1-3 img{
+    width: 100%;
+  }
+  .how-to span, .vote .numerals, .about .text h4{
+    margin-left: -3px;
+  }
+  .how-to .grid-1-3{
+    margin-top: 40px;
+  }
+  section .grid-1-3 h4{
+    margin:20px 0 10px;
+  }
+  section .grid-1-3 p{
+    margin-bottom: 25px;
+  }
+  .how-to .left{
+    float: none;
+  }
+  .intro-app h1{
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    padding-right: 40px;
+  }
+  .how-to{
+    padding:80px 0;
+  }
+  .mission{
+    padding: 60px 0 50px;
+  }
+  section .title h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  section .title h3{
+    font-size: 1.5em;
+      line-height: 1.2em;
+  }
+  section .title {
+    margin-bottom: 40px;
+  }
+  section .grid-1-3 h4{
+    font-size: 20px;
+  }
+  .about .text {
+    width: 100%;
+    padding-right: 0;
+    padding: 70px 0 0;
+  }
+  .team{
+    height: auto;
+  }
+  .team img{
+    width: 50%;
+    width: 100%;
+  }
+  .team .grid-1-2{
+    /*width: 50%;*/
+    display: inline-block;
+  }
+  .team a .grid-1-2{
+    width: 50%;
+    width: 100%;
+    display: inline-block;
+    display: block;
+  }
+  .team .member{
+    padding:30px 0 40px 15px;
+    width: calc(100% - 20px);
+  }
+  .member{
+    height: auto;
+  }
+  .team .hidden{
+    margin-top:25px;
+  }
+  .member p {
+    /*font-size: 13px;*/
+    line-height: 1.3em;
+    margin-top:10px;
+  }
+  .member h5{
+    /*font-size: 18px;*/
+  }
+  #vote{
+    height: auto;
+  }
+  .vote .title{
+    padding:90px 0 0;
+  }
+  .vote .grid-1-3 {
+    margin-bottom: 10px;
+  }
+  .vote .grid-1-3 p{
+    vertical-align: top;
+  }
+  .vote .title p {
+    width: 100%;
+  }
+  .vote p {
+    margin-left:10px;
+    width: calc(73% - 20px);
+  }
+  .vote .grid-1-3.last{
+    margin-bottom: 30px;
+  }
+  .vote a button{
+    margin-bottom: 50px;
+  }
+  .vote .title h2 {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1179px) {
+  .intro-app{background-attachment: scroll;background-height:100%;}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1179px){
+  .intro-app{background-attachment: scroll;background-height: 100%;}
 }

@@ -4,10 +4,9 @@
   <meta property="og:description" content="Como você avalia suas viagens de ônibus no Rio? Que tal avaliar suas experiências e compartilhar no facebook para ajudar a melhorar esse serviço?" />
 <% end %>
 
-<%= link_to(root_path, class: 'etiqueta') do %>
-  <%= image_tag("etiqueta.png") %>
-<% end %>
-
+<a class="etiqueta" target="_blank" href="http://rioapps.com.br/apps/16">
+  <%= image_tag('etiqueta.png') %>
+</a>
 <section class="intro-app">
   <div class="container">
     <div class="brand">
@@ -15,15 +14,15 @@
         <%= image_tag("logo@2x.png", class: 'logo') %>
         <div class="name">
           <h1>Busão Nota 10</h1>
-          <h2>Melhore o transporte do Rio</h2>
         </div>
       </div>
     </div>
     <div>
       <div class="grid-1-2">
-        <h2>Como você avalia suas viagens de ônibus no Rio?</h2>
+        <h1>Melhore o transporte do Rio!</h1>
+        <h2>Como você avalia suas viagens de ônibus?</h2>
         <h3>Que tal avaliar suas experiências e compartilhar no facebook para ajudar a melhorar esse serviço?<br>O histórico de avaliações será transparente para toda a comunidade, a prefeitura do Rio e as empresas de ônibus.</h3>
-        <a href="#"><button><span class="android"></span>Baixe Grátis</button></a>
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=br.com.busaonota10.production"><button><span class="android"></span>Baixe Grátis</button></a>
         <p>Disponível no Google Play Store</p>
       </div>
       <figure class="grid-1-2 right">
@@ -32,3 +31,130 @@
     </div>
   </div>
 </section>
+
+  <nav class="menu single-page-nav">
+    <ul class="container">
+        <li><a href="#how-to" class="current">COMO USAR</a></li>
+        <li><a href="#mission" class="">MANIFESTO</a></li>
+        <li><a href="#about" class="">SOBRE</a></li>
+        <li><a href="#team" class="">EQUIPE</a></li>
+        <li class="right"><a class="vote" href="#vote" target="_blank"><button>VOTE NO APP</button></a></li>
+    </ul>
+</nav>
+
+<section id="how-to" class="how-to">
+  <div class="container">
+    <div class="grid-1-3 left">
+      <span>01</span>
+      <h4>Insira os dados do veículo</h4>
+      <p>Digitar o número do veículo e a linha em que você estava</p>
+      <%= image_tag("mockup-step1.png") %>
+    </div>
+    <div class="grid-1-3 left">
+      <span>02</span>
+      <h4>Avalie a sua experiência</h4>
+      <p>Marque como boa ou ruim, podendo descrever o ocorrido e envie!</p>
+      <%= image_tag("mockup-step2.png") %>
+    </div>
+    <div class="grid-1-3 last">
+      <span>03</span>
+      <h4>Compartilhe com a galera</h4>
+      <p>Compartilhe nas redes sociais (facebook, twitter, whatsapp, etc)</p>
+      <%= image_tag("mockup-step3.png") %>
+    </div>
+  </div>
+</section>
+<section id="mission" class="mission">
+  <div class="container">
+    <div class="title">
+      <h2>Manifesto</h2>
+      <h3>Crenças e motivações para criação do projeto</h3>
+    </div>
+    <div class="grid-1-3 left">
+      <span></span>
+      <h4>Colaboração</h4>
+      <p>Acreditamos no poder de cada indivíduo de fazer a diferença através da colaboração com suas experiências pessoais, servindo como agentes transformadores em nossa comunidade!</p>
+    </div>
+    <div class="grid-1-3 left">
+      <span></span>
+      <h4>Transparência</h4>
+      <p>O histórico de informações produzidas é um bem público e deve estar disponível: para a comunidade, para a Prefeitura do Rio e para as empresas de ônibus que atuam na região.</p>
+    </div>
+    <div class="grid-1-3 last">
+      <span></span>
+      <h4>Valorização</h4>
+      <p>Parabenizar atitudes e serviços positivas e apontar o que pode ser melhorado é o caminho ideal para a valorização e aperfeiçoamento do transporte.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="text title left">
+      <h2>Sobre</h2>
+      <p>O app surgiu a partir do Rio 450, um projeto da Prefeitura do Rio de Janeiro comemorativo dos 450 anos da cidade maravilhosa. O Rio 450 anos criou dois concursos, o “Rio Ideias” e o “Rio Apps”.</p>
+      <p>O Rio ideias contou com apoio da comunidade para geração e votação das melhores ideias de aplicativos para a cidade.</p>
+      <p>O “Rio Apps” é a instrumentalização dessas ideias em novas tecnologias acessíveis para os cariocas, a fim de incentivar e reconhecer os indivíduos que desenvolvam aplicativos inovadores.</p>
+      <p>O Busão nota 10 é um aplicativo popular que está participando do "Rio Apps" e foi originado de uma das das top 10 ideias do “Rio Ideias” e tem função social de melhorar o serviço de ônibus para termos uma mobilidade urbana nota 10.</p>
+    </div>
+  </div>
+  <div class="grid-1-2">
+    <%= image_tag("about.jpg") %>
+  </div>
+</section>
+
+<section id="team" class="team">
+  <div class="grid-1-2 left">
+    <%= image_tag("marcela.jpg", class: 'grid-1-2 left') %>
+    <a target="_blank" href="https://www.linkedin.com/pub/marcela-abbade/1a/34/279">
+      <div class="grid-1-2">
+        <div class="member">
+          <h5>Marcela Abbade</h5>
+          <p>User Experiece Designer</p>
+          <p class="hidden">saiba mais ›</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="grid-1-2">
+    <%= image_tag("raphael.jpg", class: 'grid-1-2 left') %>
+    <a target="_blank" href="https://br.linkedin.com/pub/raphael-cuba/40/771/74/en">
+      <div class="grid-1-2">
+        <div class="member">
+          <h5>Raphael Cuba</h5>
+          <p>Desenvolvedor de Software</p>
+          <p class="hidden">saiba mais ›</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="vote" class="vote">
+  <div class="container">
+    <div class="title">
+      <h6>CURTIU?</h6>
+      <h2>vota na gente!</h2>
+      <p>Nosso projeto é um forte concorrente do concurso da prefeitura Rio APPs!
+        <br>Vote para irmos adiante. Saiba como:</p>
+    </div>
+    <div class="grid-1-3 left">
+      <span class="numerals">01</span>
+      <p>Acesse o site do Rio Apps no botão abaixo</p>
+    </div>
+    <div class="grid-1-3 left">
+      <span class="numerals">02</span>
+      <p>Faça seu cadastro ou login via facebook</p>
+    </div>
+    <div class="grid-1-3 last">
+      <span class="numerals">03</span>
+      <p>Vote no busão nota 10 e deixe seu comentário!</p>
+    </div>
+    <a target="_blank" href="http://rioapps.com.br/apps/16"><button><span class="star"></span>QUERO VOTAR NO APP</button></a>
+  </div>
+</section>
+<footer class="small">
+  <div class="container">
+    <a href="#">SUGESTÕES? ENTRE EM CONTATO</a>
+  </div>
+</footer>
